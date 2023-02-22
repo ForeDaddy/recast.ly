@@ -1,10 +1,8 @@
-var VideoList = () => (
+import VideoListEntry from './src/components/VideoListEntry.jsx'
+
+var VideoList = (VideoList) => (
   <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    {VideoList.videos.map(video => <VideoListEntry video={video} />)}
   </div>
 );
 

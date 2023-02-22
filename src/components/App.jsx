@@ -1,4 +1,12 @@
+import exampleVideoData from 'compiled/src/components/exampleVideoData.js'
+
 var App = () => (
+
+  <div>
+    <VideoList videos={exampleVideoData} />
+  </div>
+
+
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
